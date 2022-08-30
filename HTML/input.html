@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h3>Cadastre-se</h3>
+    <form>
+        <label>Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+        <br><br>
+        <label>Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome">
+        <br><br>
+        <label>Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Insira seu telefone">
+        <br><br>
+        <label>Data de Nascimento</label>
+        <input type="date" id="dtNascimento" name="dtNascimento">
+        <br><br>
+        <label>CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF">
+        <br><br>
+        <label>Email</label>
+        <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+        <br><br>
+        <label>Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Insira sua senha" minlength="5" maxlength="10"
+            required>
+        <br><br>
+        <label>Cor Preferida:</label>
+        <input type="color" id="cor" name="cor">
+        <br><br>
+        <label>Gênero</label>
+        <select id="genero" name="genero">
+            <option value="">Selecione...</option>
+            <option value="1" selected>Masculino</option>
+            <option value="2">Feminimo</option>
+            <option value="3">Não binário</option>
+        </select>  
+        <br><br>
+        <input 
+        type="checkbox"
+        id="aceiteTermos"
+        name="aceiteTermos">
+        <label>Aceito os termos.....</label>
+        <br><br>
+        <label>Escolha sua linguagem de proramação favorita</label>
+        <br><br>
+        <label>Arquivo</label>
+        <input type="file">
+        <br><br>
+    </form>
+
+
+</body>
+
+</html>
