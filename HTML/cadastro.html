@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-cadastro">
+            <h3>Cadastre-se</h3>
+            <form>
+                <label>Nome: </label><br>
+                <input type="text" name="nome" id="nome">
+
+                <label>Email: </label><br>
+                <input type="email" name="email" id="email">
+
+                <label>Senha: </label><br>
+                <input type="password" name="senha" id="senha">
+
+                <label>Endereço: </label><br>
+                <input type="text" name="endereco" id="endereco" placeholder="Ex.: Rua Tal, Nº159">
+
+                <label>Data de nascimento: </label><br>
+                <input type="date" name="dtNascimento" id="dtNascimento">
+
+                <label>Sexo: </label><br>
+                <select name="sexo" id="sexo">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="OUTRO">Outro</option>
+                </select>
+
+                <button>SALVAR</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

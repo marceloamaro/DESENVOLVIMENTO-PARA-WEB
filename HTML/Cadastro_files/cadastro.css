@@ -1,0 +1,46 @@
+.main{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 100%;
+}
+body{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+.form-cadastro{
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    min-height: 300px;
+    margin-top: 0px;
+    margin-left: 24.5%;
+    margin-right: 0px;
+}
+
+.form-cadastro h3{
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.form-cadastro form label{
+    color: #fff;
+    font-family: Arial;
+    margin-left: 10px;
+}
+
+.form-cadastro form input, select{
+    margin-left: 10px;
+    width: 94%;
+    font-size: 16px;
+    color: blue;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+    
+
+}
