@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-md-3 col-md-6 bloco-login">
+                <h3>Cadastro-se</h3>
+                <div class="bloco-input">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+
+                <div class="bloco-input">
+                    <label class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+
+                <div class="bloco-input">
+                    <label class="form-label">Senha:</label>
+                    <input type="password" class="form-control" name="senha" id="senha">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bloco-input">
+                            <label class="form-label">Estado</label>
+                            <select class="form-control" name="estado" id="estado">
+                                <option value="ce">Ceara</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="rj">Rio de Janeiro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="bloco-input">
+                            <label class="form-label">Cidade</label>
+                            <select class="form-control" name="cidade" id="cidade">
+                                <option value="mbc">Mombaça</option>
+                                <option value="fort">Fortaleza</option>
+                                <option value="acop">Acopiara</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-10">
+                        <button class="btn btn-dark col-md-12 btn-salvar">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

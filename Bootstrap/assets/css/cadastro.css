@@ -1,0 +1,28 @@
+.bloco-login{
+    background-color: #297baa;
+    margin-top: 10%;
+    border-radius: 25px 3px 25px 3px;
+    padding-bottom: 40px;
+    -webkit-box-shadow: 22px 10px 36px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 22px 10px 36px 15px rgba(0,0,0,0.75);
+    box-shadow: 22px 10px 36px 15px rgba(0,0,0,0.75)
+}
+.bloco-login h3{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+.bloco-login label{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 10px;
+
+}
+.btn-salvar{
+    margin-top: 25px;
+    height: 50px;
+    font-size: 20px;
+    min-width: 100%;
+}
