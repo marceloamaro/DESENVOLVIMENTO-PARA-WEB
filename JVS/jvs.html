@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 01 -JS</title>
+    
+</head>
+<body>
+    <p id="msg"></p>
+    <button onclick="escrever()">ESCREVER COM CLIQUE</button>
+    <button onmouseover="escrever2()">ESCREVER AO PASSA O MOUSE</button>
+    <button onkeypress="escrever3()">Pessionou uma tecla"</button>
+    <script>
+        /*console.log("marcelo");
+        alert('marcelo');
+       document.getElementById('msg').innerHTML= "Olá, mundo!!"
+       */
+      function escrever(){
+        document.getElementById('msg').innerHTML= "Cliquei!!"
+      }
+      function escrever2(){
+        document.getElementById('msg').innerHTML= "Passei o Mouse!!"
+      }
+      function escrever3(){
+        document.getElementById('msg').innerHTML= "Pessionou uma tecla"
+      }
+    </script>
+</body>
+</html>
