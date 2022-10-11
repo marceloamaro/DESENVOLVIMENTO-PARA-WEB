@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <script src="assets/js/cad.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="offset-md-2 col-md-8">
+            <form onsubmit="return false" id="form-cad">
+                <div class="col-md-12">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" id="nome" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Email:</label>
+                    <input type="text" id="email" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label>Sexo:</label>
+                    <select class="form-control" id="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                    
+                </div>
+                <br>
+                <div class="col-12">
+                    <button onclick="inserir();" class="btn btn-success col-12">Salvar</button>
+                </div>
+            </form>
+            <br>
+            <div class="row">
+                <table class="table table-dark" id="tbl-cadastro">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Sexo</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
