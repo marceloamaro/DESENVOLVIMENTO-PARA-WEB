@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <script src="assets/js/nt.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="offset-md-2 col-md-8">
+            <form onsubmit="return false" id="form-cad">
+                <div class="col-md-12">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" id="nome" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Disciplina:</label>
+                    <input type="text" id="disciplina" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Nota:</label>
+                    <input type="text" id="nota" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label>Status:</label>
+                    <select class="form-control" id="status">
+                        <option value="APR">Aprovado</option>
+                        <option value="REP">Reprovado</option>
+                    </select>
+                    
+                </div>
+                <br>
+                <div class="col-12">
+                    <button onclick="inserir();" class="btn btn-success col-12">Salvar</button>
+                </div>
+            </form>
+            <br>
+            <div class="row">
+                <table class="table table-dark" id="tbl-cadastro">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Disciplina</td>
+                        <td>Nota</td>
+                        <td>Status</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

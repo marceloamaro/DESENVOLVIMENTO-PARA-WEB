@@ -18,10 +18,13 @@ function inserir(){
         var linha = tabela.insertRow(numLinhas);
         var celula1 = linha.insertCell(0);
         var celula2 = linha.insertCell(1);
+        var celula3 = linha.insertCell(2);
         celula1.innerHTML = nome;
         celula2.innerHTML = email;
+        celula3.innerHTML = sexoDescricao ;
         document.getElementById('nome').value ="";
         document.getElementById('email').value ="";
+        
     }
 
 }
