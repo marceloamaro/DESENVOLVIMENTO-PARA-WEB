@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/telaLogin/css/style.css" />
+    <link rel="stylesheet" href="/telaLogin/css/bootstrap.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="vh-100">
+      <div
+        class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-1 px-2 px-xl-5 footer"
+      >
+        <h4 class="footer">
+          Sistema Acadêmico - Universidade Estadual do Ceará
+        </h4>
+      </div>
+      <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img
+              class="uece"
+              src="/telaLogin/css/img/lateral.png"
+              width="1200"
+              height="400"
+            />
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form>
+              <div class="divider d-flex align-items-center my-4">
+                <div
+                  class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+                >
+                  <h4>Aluno On-line | UECE</h4>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="login">Usuário</label>
+                <input
+                  type="text"
+                  id="login"
+                  class="form-control form-control-lg"
+                  placeholder="Identificação do Usuário"
+                />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <label class="form-label" for="senha">Senha</label>
+                <input
+                  type="password"
+                  id="senha"
+                  class="form-control form-control-lg"
+                  placeholder="Senha"
+                />
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-0">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                  />
+                  <label class="form-check-label" for="form2Example3">
+                    Lembrar de mim
+                  </label>
+                </div>
+                <a href="#!" class="text-body">Esqueceu seu acesso?</a>
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="botao"
+                  style="padding-left: 1.5rem; padding-right: 1.5rem"
+                  onclick="logar();"
+                >
+                  Acessar
+                </button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">
+                  Ainda não possui conta?
+                  <a href="#!" class="link-danger">Criar</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-1 px-1 px-xl-5 footer"
+      >
+        <div class="teste">
+          <h6>Desenvolvido por: Jonas Lima e Marcelo Amaro</h6>
+        </div>
+      </div>
+    </section>
+    <script src="/telaLogin/css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/telaLogin/js/login.js" />
+
+    <script>
+      function logar() {
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
+
+        if (login == "admin" && senha == "admin") {
+          location.href = "/paginaInicial/index.html";
+        } else {
+          alert("dados incorretos");
+        }
+      }
+    </script>
+  </body>
+</html>
